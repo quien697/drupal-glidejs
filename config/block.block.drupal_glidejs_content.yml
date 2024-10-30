@@ -1,0 +1,22 @@
+uuid: b799fcc8-3139-4737-beda-959b382257b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_glidejs
+_core:
+  default_config_hash: xFVx1ujwZpPCcBb9gSMWmNCUkiIkBfWk2qlQa0aZQbM
+id: drupal_glidejs_content
+theme: drupal_glidejs
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

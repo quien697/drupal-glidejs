@@ -1,0 +1,22 @@
+uuid: e498b7da-fd41-4999-aecc-d05bf8ca8977
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal_glidejs
+_core:
+  default_config_hash: wRd5_MOHxgfdn3Qr76KDKt2CT_pHpfokykL9tMd1vlI
+id: drupal_glidejs_local_tasks
+theme: drupal_glidejs
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: a136bb93-ed0d-43d5-bcda-d823bcbd56cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - drupal_glidejs
+_core:
+  default_config_hash: Q_gxMwRtsstb4-gbDA7ZiYXahr9OmCzkyfKnKMAvFEY
+id: drupal_glidejs_account_menu
+theme: drupal_glidejs
+region: nav_additional
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

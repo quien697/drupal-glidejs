@@ -875,4 +875,7 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
 
-$settings['config_sync_directory'] = 'sites/default/files/config_PVAyOdh0m2pIa1LFmt_a-ELRlSp0nXijkUYWSD-43-XSZB_Ca26Ri5VKVQK4_-WhMiVJGdir1Q/sync';
+/**
+ * Config folder path
+ */
+$settings['config_sync_directory'] = '../config';

@@ -1,0 +1,25 @@
+uuid: 73a6a18d-b9fa-4ba3-8b66-bf05a3d2c30c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_glidejs
+_core:
+  default_config_hash: pqJ_3LVi0Mad0_1lTCUxyXIx-R3y-B0vz4HfEoLoCRo
+id: drupal_glidejs_branding
+theme: drupal_glidejs
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

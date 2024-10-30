@@ -1,0 +1,22 @@
+uuid: b767c10d-ef29-436c-b448-5c3575eab38b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_glidejs
+_core:
+  default_config_hash: cbiRg7mGx72b8tCX7Bg3a-BasnQ-FNpF5nO5Sk5gmR8
+id: drupal_glidejs_breadcrumbs
+theme: drupal_glidejs
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

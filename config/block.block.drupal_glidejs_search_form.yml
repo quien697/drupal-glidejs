@@ -1,0 +1,23 @@
+uuid: 0cca3ec9-93e0-4fe9-90df-0871fd859ec1
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - drupal_glidejs
+_core:
+  default_config_hash: pMHe3lKovaBbvFRoHgo_RCWz9REPL0tZvYkn4nvmjnU
+id: drupal_glidejs_search_form
+theme: drupal_glidejs
+region: nav_additional
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

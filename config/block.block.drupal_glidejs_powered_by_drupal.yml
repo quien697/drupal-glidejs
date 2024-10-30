@@ -1,0 +1,22 @@
+uuid: 56e276c7-b7a8-4014-aa73-cd9241d792c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_glidejs
+_core:
+  default_config_hash: XDSQ8N1fHepR3fyBlNwMFVFzApLP50Dv4I4PWQxMRX0
+id: drupal_glidejs_powered_by_drupal
+theme: drupal_glidejs
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

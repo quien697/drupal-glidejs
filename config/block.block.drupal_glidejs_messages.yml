@@ -1,0 +1,22 @@
+uuid: 25a2b9c7-b7cd-4e7e-8d6a-b442954417ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_glidejs
+_core:
+  default_config_hash: lsfocXvqRmJV87pnWYcKLBM-Aww6JWemBkKVLYeCn58
+id: drupal_glidejs_messages
+theme: drupal_glidejs
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

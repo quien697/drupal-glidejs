@@ -1,0 +1,37 @@
+uuid: 991a3945-4a1c-4091-83bf-2744e437c1d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.image_slider.body
+    - field.field.node.image_slider.field_is_image
+    - node.type.image_slider
+  module:
+    - glide
+    - text
+    - user
+id: node.image_slider.default
+targetEntityType: node
+bundle: image_slider
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_is_image:
+    type: glide_image
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

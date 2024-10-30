@@ -1,0 +1,18 @@
+uuid: 403dd1d7-b450-4957-bfd0-a94ebc48ce7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Image Slider'
+type: image_slider
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

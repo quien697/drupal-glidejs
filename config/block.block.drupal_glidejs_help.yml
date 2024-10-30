@@ -1,0 +1,22 @@
+uuid: 488ddd82-8764-45d2-ab25-d4fbc7816a91
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupal_glidejs
+_core:
+  default_config_hash: 7VIOxyodKkkGYdu71uFkP4jwx6NBSPBN35WwS6g1TZ8
+id: drupal_glidejs_help
+theme: drupal_glidejs
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

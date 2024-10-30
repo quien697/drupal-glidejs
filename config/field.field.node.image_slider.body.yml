@@ -1,0 +1,24 @@
+uuid: d23682f6-bcd8-4651-a7e5-a975b55f0f3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.image_slider
+  module:
+    - text
+id: node.image_slider.body
+field_name: body
+entity_type: node
+bundle: image_slider
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

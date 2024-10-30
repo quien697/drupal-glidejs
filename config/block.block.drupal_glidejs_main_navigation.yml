@@ -1,0 +1,27 @@
+uuid: 0203d8ac-4bbc-4dc8-88db-bffcf392024c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - drupal_glidejs
+_core:
+  default_config_hash: na9YkZElqjBiQ-B6vD0e6c9TOez7Ibui5zI720FVSqI
+id: drupal_glidejs_main_navigation
+theme: drupal_glidejs
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

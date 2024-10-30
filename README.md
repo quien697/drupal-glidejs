@@ -18,7 +18,7 @@ It's a practice project to create a slider or a carousel with glide.js.
 
 * Drupal 11.05
 * Composer 2.8.1
-* drush
+* drush 13.3
 * bootstrap5
 * oomphinc/composer-installers-extender
 * glidejs--glide
@@ -64,7 +64,30 @@ It's a practice project to create a slider or a carousel with glide.js.
       }
       ```
 
-5. 
+5. Install drush
+
+   ```bash
+   composer require --dev drush/drush
+   ```
+
+6. Create a new sub theme base on [bootstrap5](https://www.drupal.org/project/bootstrap5).
+
+   1. Install bootstrap5 and enable it
+
+      ```bash
+      composer require 'drupal/bootstrap5:^4.0'
+      drush theme:enable bootstrap5
+      ```
+
+   2. Within CMS, navigate to Appearance -> settings -> Bootstrap5 -> sub theme and create a new sub theme.
+
+   3. Setup new sub theme as a default theme.
+
+7. wefwef
+
+8. wefwe
+
+9. wefwe
 
 
 

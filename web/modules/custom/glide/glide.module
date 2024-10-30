@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Glide integration.
+ */
+
+/**
+* Implements hook_theme().
+*/
+function glide_theme(): array {
+    return [
+        'glide_image' => [
+            'variables' => [
+                'items' => [],  // Ensure 'items' matches the render element
+            ],
+            'template' => 'glide-image',
+        ],
+        'glide_video' => [
+            'variables' => [
+                'items' => [],  // Ensure 'items' matches the render element
+            ],
+            'template' => 'glide-video',
+        ],
+    ];
+}

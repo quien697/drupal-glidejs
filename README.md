@@ -5,6 +5,11 @@ This is a [Drupal](https://www.drupal.org/home) project bootstrapped with [Compo
 ## Description
 
 It's a practice project to create a slider or a carousel with glide.js.
+The project contains:
+
+1. Create a usb theme base on `bootstrap5` and set it as a default theme.
+2. Install three-party libraries `Glide.js` and set it up.
+3. Create custom formatter for image slider and video slider.
 
 ## Development Environment
 
@@ -28,7 +33,7 @@ It's a practice project to create a slider or a carousel with glide.js.
 1. Create a initial Drupal project using composer ([Using Composer to Install Drupal and Manage Dependencies](https://www.drupal.org/docs/develop/using-composer/manage-dependencies)).
 
    ```bash
-   composer create-project drupal/recommended-project your-project-name
+   composer create-project drupal/recommended-project drupal_glidejs
    ```
 
 2. Setup the project on MAMP.
@@ -83,11 +88,82 @@ It's a practice project to create a slider or a carousel with glide.js.
 
    3. Setup new sub theme as a default theme.
 
-7. wefwef
+7. Install [Glide.js](https://glidejs.com/) and set it up on the project. 
 
-8. wefwe
+   1. Install [composer-installers-extender](https://github.com/oomphinc/composer-installers-extender) that allows any package to be installed to a directory other than the default `vendor` directory within a project on a package-by-package basis.
 
-9. wefwe
+      ```bash
+      composer require oomphinc/composer-installers-extender
+      ```
 
+      Note: if you skip this step the libraries will not be installed in `web/libraries` folder but in the default vendor folder.
 
+   2. Add Asset Packagist to the "repositories" section of your project's root composer.json. 
 
+      ```json
+      "repositories": [
+      		...
+      		{
+      				"type": "composer",
+              "url": "https://asset-packagist.org"
+      		}
+          ...
+      ],
+      ```
+
+   3. Register npm assets as new "installer types" in the "extra" section of composer.json and also register them in "installer-paths" as part of the types of assets to be saved in the `web/libraries` folder.
+
+      ```json
+      "extra": {
+      		...
+      		"installer-types": ["npm-asset"],
+      		"installer-paths": {
+      						...
+                  "web/libraries/{$name}": [
+                      "type:drupal-library",
+                      "type:npm-asset"
+                  ],
+                  ...
+          },
+          ...
+      },
+      ```
+
+   4. install packages from npm-asset
+
+      ```bash
+      composer require npm-asset/glidejs--glide
+      ```
+
+   5. Edit `drupal_glidejs.libraries.yml` and add `glidejs--glide` on it.
+
+      ```yml
+      glidejs--glide:
+        version: 1.0
+        css:
+          theme:
+            /libraries/glidejs--glide/dist/css/glide.core.min.css: {}
+            /libraries/glidejs--glide/dist/css/glide.theme.min.css: {}
+        js:
+          /libraries/glidejs--glide/dist/glide.min.js: {}
+        dependencies:
+          - core/jquery
+      ```
+
+   6. Edit `drupal_glidejs.info.yml` add `glidejs--glide` under `libraries`.
+
+      ```yml
+      ...
+      libraries:
+      	...
+        - drupal_glidejs/glidejs--glide
+      ...
+      ```
+
+8. Create a custom image formatter and a custom video formatter on the custom module. Reference site below
+
+   1. [Create a custom field formatter](https://www.drupal.org/docs/creating-custom-modules/creating-custom-field-types-widgets-and-formatters/create-a-custom-field-formatter)
+
+## Issues facing
+
+1. Glide.js is working well, but the video field formatter is still having problems, will figure it out later on.

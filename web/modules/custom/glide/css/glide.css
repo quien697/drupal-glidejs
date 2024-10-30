@@ -1,0 +1,9 @@
+.glide iframe,
+.glide img {
+    height: 75vh;
+    width: 100%;
+}
+
+.glide .glide__bullets {
+    margin-bottom: 10px;
+}

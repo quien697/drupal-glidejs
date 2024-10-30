@@ -1,0 +1,11 @@
+name: 'Glide'
+type: module
+description: 'Provides a custom image field and a custom remote video field formatter with Glide.js three-party library'
+core_version_requirement: ^10 || ^11
+package: Custom
+libraries:
+  - greenerlight/glidejs--glide
+dependencies:
+  - field
+  - image
+  - media
